@@ -1,19 +1,26 @@
 
-window.onscroll = () => {
-    scroll();
-}
 var navbar = document.getElementById('navbar'),
-    sticky = navbar.offsetParent;
+img = document.getElementsByClassName('container'),
+overlay = document.getElementsByClassName('overlay');
 
-function scroll(){
-    navbar.style.display = "block"; 
-    if(window.pageYOffset >= sticky){
+window.onscroll = () => {
+    if(window.scrollY >=  550) {
+        navbar.style.display = "block"; 
         navbar.classList.add("sticky"); 
-        } else {
-            navbar.classList.remove('sticky');
-        }
-}
-if(sticky === 0) {
-    navbar.style.display = "none"; 
+    } else {
+        navbar.style.display = "none"; 
+        navbar.classList.remove("sticky");
+    }
 }
 
+function onSubmit(){
+    var email = document.getElementById('input-email');
+    email.val('');
+}
+
+// img.onmouseover =  ()=> {
+//     overlay.show();
+// };
+// img.onmouseleave =  () => {
+//     overlay.hide();
+// };

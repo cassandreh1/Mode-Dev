@@ -7,23 +7,25 @@ if($db === false){
 }
 $userEmail = $_POST['email'];
 $timestamp = date('Y-m-d G:i:s');
-$message = '';
+$message = "";
 
 $select ="SELECT * FROM signinform WHERE email = '$userEmail'";
 $result = mysqli_query($db, $select);
-
-if(mysqli_fetch_assoc($result)) {
-    return true;
-} else {
+if(mysqli_num_rows($result) > 0) {
     $message = 'This email is already being used';
+    $userEmail = "";
 }
 
 if(isset($_POST['submit'])) {
-    $sql = "INSERT INTO signinform (email, created_on) VALUES('$userEmail', '$timestamp')";
-    if(mysqli_query($db, $sql)){
-        $message = "Thanks for signing up! You'll recieve an email with your invititation";
-    } else{
-        $message = "There was a problem with your request: valid email address not provided";
+    if(!empty($userEmail)) {
+        $sql = "INSERT INTO signinform (email, created_on) VALUES('$userEmail', '$timestamp')";
+        if(mysqli_query($db, $sql)){
+            $message = "Thanks for signing up! You'll recieve an email with your invititation";
+        } else{
+            $message = "There was a problem with your request: valid email address not provided";
+        }
+    } else {
+        $message = "";
     }
 }
 mysqli_close($db);
@@ -37,7 +39,7 @@ mysqli_close($db);
     <title>MATTR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
 </head>
 <body>
     <div class="header-picture">
@@ -62,14 +64,14 @@ mysqli_close($db);
                 <p class="proxima-nova-font-style">GET TO KNOW YOUR AUDIENCE. <br> REQUEST A PRIVATE BETA INVITATION</p>
                 <form action="" method="POST" id="input-email">
                     <input id="email-input" class="proxima-nova-font-style" type="email" name="email" placeholder="your@email.com">
-                    <button id="request-button"type="submit" name="submit">REQUEST INVITE</button>
+                    <button id="request-button"type="submit" name="submit" onclick="onSubmit()">REQUEST INVITE</button>
                 </form>
                 <span class="proxima-nova-font-style" id="email-message"><?php echo $message ?></span>
             </div>
         </header>
     </div>
     <hr>
-    <div id="navbar" style="display: none;" onscroll="scroll()">
+    <div id="navbar" style="display: none;">
             <img src="./images/logo.png" alt="mattr log">
             <p class="proxima-nova-font-style" id="nav-header-title">MATTR</p>
             <button id="request-button"type="button">REQUEST AN INVITATION</button>
@@ -82,7 +84,7 @@ mysqli_close($db);
         </div>
         <div>
             <img class="img-center" src="./images/audience.png" alt="">
-            <h3><a href="lighBox.html">Audience Personality Segments</a></h3>
+            <h3>Audience Personality Segments</h3>
             <p>Decide how you want to look at your  audience, based on our Unique Personality Type Analysis and demographics.</p>
         </div>
         <div>
