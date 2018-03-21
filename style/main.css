@@ -1,0 +1,261 @@
+/* generic styling */
+body {
+    margin: 0px;
+}
+.adelle-font-style {
+    font-family: Adelle, serif;
+}
+
+.proxima-nova-font-style {
+    font-family: Proxima Nova, sans-serif;
+}
+
+h3 {
+    color: rgb(204, 61, 109);
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+}
+
+.inline-block-font-style {
+    display: "inline-block";
+}
+
+.img-center {
+    margin-left: 31%;
+}
+
+/*header styling*/
+
+#header-title {
+    display: inline-block;
+    margin-left: 15px;
+    width: 50%;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+#mobile-header-title {
+    display: none;
+}
+
+#header-blog {
+    margin-right: 15px;
+    display: inline-block;
+    width: 38%;
+    text-align: right;
+    font-size: 12px;
+    color: #FF1D8E;
+}
+
+#header-sign-in {
+    text-align: right;
+    display: inline-block;
+    font-size: 12px;
+    color: #FF1D8E;
+    /* width: 10%; */
+}
+
+.header-picture {
+    height: 550px;
+    background-image: url("../images/BG.png");
+    background-repeat: no-repeat;
+}
+
+.text-position {
+    padding: 0 30%;
+    color: white;
+    text-align: center;
+    font-weight: lighter;   
+}
+
+#sub-title {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+
+#invite-content {
+    margin-top: 55px;
+    font-size: small;
+}
+
+#input-email{
+    padding: 15px 5px;
+    background-color: white;
+}
+
+#email-input {
+    border: none;
+    padding: 13px;
+    font-style: italic;
+    float: left;
+}
+
+#request-button {
+    border: none;
+    padding: 9px;
+    color: white;
+    background-image: linear-gradient(to right , orange, rgb(204, 61, 109));
+    border-radius: 2px;
+}
+ 
+hr {
+    border: 1px solid red;
+    margin: 0;
+}
+
+/*section styling*/
+section {
+    padding: 40px 50px;
+    height: 515px;
+    background-color: #e4e4e4;
+    color: rgb(117, 111, 111);
+}
+section div {
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+section div img {
+    height: 30%;
+    width: auto;
+}
+
+section div h1 {
+    font-size: 50px;
+    margin: 0px;
+    color: #551A8B;
+    font-weight: 100;
+}
+section div p {
+    font-style: italic;
+}
+
+/*footer styling */
+footer {
+    height: 250px;
+    background-color: lightgray;
+    padding:40px 50px;
+    color: darkblue;
+}
+
+footer div {
+    width: 24%;
+    display: inline-block;
+}
+footer div li {
+    list-style-type: none;
+}
+
+ul{
+    padding: 0;
+    margin-top: 8px;
+}
+ /*sticky navbar*/
+#navbar {
+    overflow: hidden;
+    background: black;
+}
+#navbar img {
+    height: 30px;
+    padding-top: 16px;
+    padding-left: 10px;
+}
+
+#nav-header-title {
+    margin: 15px 0 15px 5px;
+    display: inline-block;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#navbar button {
+    margin: 24px 15px 15px 15px;
+    float: right;
+    display:block;
+    width: 25%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*media queries */
+@media screen and (max-width: 799px){
+    #header-blog {
+        width: 18%;
+    }
+    .text-position {
+        padding: 0px 20px;
+    }
+    #sub-title {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 40px 20px;
+        height: 1500px;
+    }
+    section div {
+        width: 100%;
+    }
+
+    section div img {
+        height: 11%
+    }
+    #request-button {
+        padding: 10px 7px;
+        margin-right: 5px;
+    }
+
+    #email-input {
+        padding: 0;
+    }
+    footer {
+        height: 450px;
+    }
+    footer div {
+        width: 100%;
+    }
+    #header-title {
+        visibility: hidden;
+    }
+    #mobile-header-title {
+        display: block;
+        margin: 0;
+        font-size: 21px;
+        letter-spacing: 5px;
+        font-weight: lighter;
+    }
+}
+@media screen and (min-width: 550px) and (max-width: 799px) {
+    .text-position {
+        padding: 0 20%;
+    }
+    section {
+        padding: 20% 20%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    section {
+        height: 800px;
+    }
+    section div {
+        width: 49%;
+    }
+    section div img {
+        height: 18%;
+    }
+    .text-position {
+        padding: 0 20%;
+    }
+}
