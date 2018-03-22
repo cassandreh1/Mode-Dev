@@ -25,8 +25,9 @@ if(isset($_POST['submit'])) {
             $message = "There was a problem with your request: valid email address not provided";
         }
     } else {
-        $message = "";
+        $message;
     }
+    
 }
 mysqli_close($db);
 ?>
@@ -110,15 +111,15 @@ mysqli_close($db);
         </div>
     </section>
     <footer>
-        <div>
+        <div class="footer-content">
             <h3 class="text-align-left">San Francisco, CA</h3>
             <p class="proxima-nova-font-style">Rocetspace <br> 181 Fremont Street <br> San Francisco, California 94105 <br> EMAIL US</p>
         </div>
-        <div>
+        <div class="footer-content">
             <h3 class="text-align-left">Austin, TX</h3>
             <p class="proxima-nova-font-style">8140 North Mopac Expressway <br> Building 1, Suite 150 <br> Austin, Texas 78759 <br> EMAIL US</p>
         </div>
-        <div>
+        <div class="footer-content">
             <h3 class="text-align-left">Elsewhere</h3>
             <ul>
                 <li><span></span>Twitter</li>
@@ -126,7 +127,7 @@ mysqli_close($db);
                 <li><span></span>LinkedIn</li>
             </ul>
         </div>
-        <div>
+        <div class="footer-content">
             <h3 class="text-align-left">Company</h3>
             <ul>
                 <li>Sign In</li>

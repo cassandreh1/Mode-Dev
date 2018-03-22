@@ -164,7 +164,7 @@ footer {
     color: darkblue;
 }
 
-footer div {
+.footer-content{
     width: 24%;
     display: inline-block;
 }
@@ -225,14 +225,14 @@ ul{
 
     section {
         padding: 40px 20px;
-        height: 2000px;
+        height: 1500px;
     }
     section div {
         width: 100%;
     }
 
     section div img {
-        height: 8%
+        height: 10%
     }
     .img-center {
         margin-left: 26%;
@@ -281,5 +281,11 @@ ul{
     }
     .text-position {
         padding: 0 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #header-title {
+        text-align: center;
     }
 }
