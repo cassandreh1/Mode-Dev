@@ -17,6 +17,10 @@ h3 {
     text-align: center;
 }
 
+.text-align-left {
+    text-align: left;
+}
+
 .inline-block-font-style {
     display: "inline-block";
 }
@@ -25,10 +29,12 @@ h3 {
     margin-left: 31%;
 }
 .img-center:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
   }
-
+#italic-style {
+    font-style: italic;
+}
 /*header styling*/
 
 #header-title {
@@ -124,6 +130,7 @@ section div {
     display: inline-block;
     margin-bottom: 15px;
     margin-right: 5px;
+    position: relative;
 }
 section div img {
     height: 30%;
@@ -136,13 +143,18 @@ section div h1 {
     color: #551A8B;
     font-weight: 100;
 }
-section div p {
-    font-style: italic;
+.text-over {
+    text-align: center;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-  /* .overlay a {
+
+  .text-over a {
     text-decoration: none;
     color: white;
-  } */
+  }
 
 /*footer styling */
 footer {
@@ -195,6 +207,7 @@ ul{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 
@@ -212,14 +225,17 @@ ul{
 
     section {
         padding: 40px 20px;
-        height: 1500px;
+        height: 2000px;
     }
     section div {
         width: 100%;
     }
 
     section div img {
-        height: 11%
+        height: 8%
+    }
+    .img-center {
+        margin-left: 26%;
     }
     #request-button {
         padding: 10px 7px;
@@ -227,6 +243,7 @@ ul{
     }
     footer {
         height: 450px;
+        padding: 40px 50px;
     }
     footer div {
         width: 100%;
@@ -246,7 +263,8 @@ ul{
     .text-position {
         padding: 0 20%;
     }
-    section {
+    section,
+    footer {
         padding: 20% 20%;
     }
 }

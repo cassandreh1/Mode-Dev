@@ -64,7 +64,7 @@ mysqli_close($db);
                 <p class="proxima-nova-font-style">GET TO KNOW YOUR AUDIENCE. <br> REQUEST A PRIVATE BETA INVITATION</p>
                 <form action="" method="POST" id="input-email">
                     <input id="email-input" class="proxima-nova-font-style" type="email" name="email" placeholder="your@email.com">
-                    <button id="request-button"type="submit" name="submit" onclick="onSubmit()">REQUEST INVITE</button>
+                    <button id="request-button"type="submit" name="submit">REQUEST INVITE</button>
                 </form>
                 <span class="proxima-nova-font-style" id="email-message"><?php echo $message ?></span>
             </div>
@@ -79,48 +79,47 @@ mysqli_close($db);
     <section>
         <div>
             <h1 class="adelle-font-style">The App</h1>
-            <p class="proxima-nova-font-style">Mattr allows you to build a more  complete view of your social media  audience through a comprehensive set of segmentation, comparison
+            <p class="proxima-nova-font-style" id="italic-style"> Mattr allows you to build a more  complete view of your social media  audience through a comprehensive set of segmentation, comparison
             monitoring, and visualization tools. Explore your Features to learn more.</p>
         </div>
         <div>
             <img class="img-center" src="./images/audience.png" alt="">
+            <!-- <div class="text-over proxima-nova-font-style"> <a href="#">VIEW <br> SCREENSHOTS </a> </div> -->
             <h3>Audience Personality Segments</h3>
-            <p>Decide how you want to look at your  audience, based on our Unique Personality Type Analysis and demographics.</p>
+            <p class="proxima-nova-font-style">Decide how you want to look at your  audience, based on our Unique Personality Type Analysis and demographics.</p>
         </div>
         <div>
-            <img class="img-center" src="./images/persona.png" alt="">
+           <img class="img-center" src="./images/persona.png" alt="">
            <h3>Persona Builder</h3> 
-           <p>Combine Personality Traits and Demographics  information to create Audience Personas that make sense for your business.</p>
+           <p class="proxima-nova-font-style">Combine Personality Traits and Demographics  information to create Audience Personas that make sense for your business.</p>
         </div>
         <div>
             <img class="img-center" src="./images/engagement.png" alt="">
             <h3>Engagement Response by Pesrona</h3>
-            <p>Which of your social media activities are  attaching the audience engagement you're  looking for? See a segmented report on a  per-post basis.</p>
+            <p class="proxima-nova-font-style">Which of your social media activities are  attaching the audience engagement you're  looking for? See a segmented report on a  per-post basis.</p>
         </div>
         <div>
             <img class="img-center" src="./images/social.png" alt="">
             <h3>Social Brand BenchMarking</h3>
-            <p>See how your brand's audience compares  to that of your competition, or your industry.  Choose what you want to compare and then  view the comparision</p>
+            <p class="proxima-nova-font-style">See how your brand's audience compares  to that of your competition, or your industry.  Choose what you want to compare and then  view the comparision</p>
         </div>
         <div>
             <img class="img-center" src="./images/sentiment.png" alt="">
             <h3>Sentiment Variance</h3>
-            <p>Knowing that your audience is 'upbeat' just  isn't enough. You need to know if they're  more upbeat about your brand than they are  about other things.</p>
+            <p class="proxima-nova-font-style">Knowing that your audience is 'upbeat' just  isn't enough. You need to know if they're  more upbeat about your brand than they are  about other things.</p>
         </div>
     </section>
     <footer>
         <div>
-            <h3>San Francisco, CA</h3>
-            <p>Rocetspace 181 Fremont StreetSan Francisco, California 94105</p>
-            <p>EMAIL US</p>
+            <h3 class="text-align-left">San Francisco, CA</h3>
+            <p class="proxima-nova-font-style">Rocetspace <br> 181 Fremont Street <br> San Francisco, California 94105 <br> EMAIL US</p>
         </div>
         <div>
-            <h3>Austin, TX</h3>
-            <p>8140 North Mopac Expressway  Building 1, Suite 150  Austin, Texas 78759</p>
-            <p>EMAIL US</p>
+            <h3 class="text-align-left">Austin, TX</h3>
+            <p class="proxima-nova-font-style">8140 North Mopac Expressway <br> Building 1, Suite 150 <br> Austin, Texas 78759 <br> EMAIL US</p>
         </div>
         <div>
-            <h3>Elsewhere</h3>
+            <h3 class="text-align-left">Elsewhere</h3>
             <ul>
                 <li><span></span>Twitter</li>
                 <li><span></span>Facebook</li>
@@ -128,15 +127,15 @@ mysqli_close($db);
             </ul>
         </div>
         <div>
-                <h3>Company</h3>
-                <ul>
-                    <li>Sign In</li>
-                    <li>Blog</li>
-                    <li>FAQ</li>
-                </ul>
+            <h3 class="text-align-left">Company</h3>
+            <ul>
+                <li>Sign In</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+            </ul>
         </div>
         <div>
-            <p>&copy 2013 MATTR. All rights reserved.</p>
+            <p class="proxima-nova-font-style">&copy 2013 MATTR. All rights reserved.</p>
         </div>
     </footer>
     <script src="js/main.js"></script>

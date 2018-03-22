@@ -1,7 +1,6 @@
 
-var navbar = document.getElementById('navbar'),
-img = document.getElementsByClassName('container'),
-overlay = document.getElementsByClassName('overlay');
+var img = document.getElementsByTagName("section div"),
+textOver = document.getElementsByClassName('text-over');
 
 window.onscroll = () => {
     if(window.scrollY >=  550) {
@@ -12,15 +11,3 @@ window.onscroll = () => {
         navbar.classList.remove("sticky");
     }
 }
-
-function onSubmit(){
-    var email = document.getElementById('input-email');
-    email.val('');
-}
-
-// img.onmouseover =  ()=> {
-//     overlay.show();
-// };
-// img.onmouseleave =  () => {
-//     overlay.hide();
-// };
