@@ -96,12 +96,12 @@ mysqli_close($db);
         </div>
         <div>
             <img class="img-center" src="./images/engagement.png" alt="">
-            <h3>Engagement Response by Pesrona</h3>
+            <h3>Engagement Response by Persona</h3>
             <p class="proxima-nova-font-style">Which of your social media activities are  attaching the audience engagement you're  looking for? See a segmented report on a  per-post basis.</p>
         </div>
         <div>
             <img class="img-center" src="./images/social.png" alt="">
-            <h3>Social Brand BenchMarking</h3>
+            <h3>Social Brand Benchmarking</h3>
             <p class="proxima-nova-font-style">See how your brand's audience compares  to that of your competition, or your industry.  Choose what you want to compare and then  view the comparision</p>
         </div>
         <div>
