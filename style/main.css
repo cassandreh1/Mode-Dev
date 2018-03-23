@@ -267,6 +267,14 @@ ul{
     footer {
         padding: 20% 20%;
     }
+    section {
+        height: 1500px;
+    }
+
+    .img-center {
+        margin-left: 30%;
+    }
+    
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {
