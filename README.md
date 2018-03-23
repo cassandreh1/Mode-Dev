@@ -12,11 +12,11 @@ Technologies used:
  Time to develop: 10 hours
  
  Database Information:
- Host	localhost
- Port	3306
- User	root
- Password	root
- Socket	/Applications/MAMP/tmp/mysql/mysql.sock
+ Host	    localhost
+ Port	    3306
+ DB Name	id5156550_sign_in
+ User       id5156550_root
+ Password	'' 
  
  - Sql dumb file has been uploaded on GitHub
  
