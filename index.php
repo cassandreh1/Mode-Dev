@@ -17,17 +17,16 @@ if(mysqli_num_rows($result) > 0) {
     $userEmail = "";
 }
 
-
-    if(!empty($userEmail)) {
-        $sql = "INSERT INTO signinform (email, created_on) VALUES('$userEmail', '$timestamp')";
-        if(mysqli_query($db, $sql)){
-            $message = "Thanks for signing up! You'll recieve an email with your invititation";
-        } else{
-            $message = "There was a problem with your request: valid email address not provided";
-        }
-    } else {
-        $message;
+if(!empty($userEmail)) {
+    $sql = "INSERT INTO signinform (email, created_on) VALUES('$userEmail', '$timestamp')";
+    if(mysqli_query($db, $sql)){
+        $message = "Thanks for signing up! You'll recieve an email with your invititation";
+    } else{
+        $message = "There was a problem with your request: valid email address not provided";
     }
+} else {
+    $message;
+}
     
 }
 mysqli_close($db);
