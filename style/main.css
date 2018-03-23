@@ -225,7 +225,7 @@ ul{
 
     section {
         padding: 40px 20px;
-        height: 1500px;
+        height: 1800px;
     }
     section div {
         width: 100%;
@@ -245,7 +245,7 @@ ul{
         height: 450px;
         padding: 40px 50px;
     }
-    footer div {
+    .footer-content {
         width: 100%;
     }
     #header-title {
