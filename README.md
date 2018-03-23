@@ -12,11 +12,11 @@ Technologies used:
  Time to develop: 10 hours
  
  Database Information:
- Host	    localhost
- Port	    3306
- DB Name	id5156550_sign_in
- User       id5156550_root
- Password	'' 
+ - Host	    localhost
+ - Port	    3306
+ - DB Name	id5156550_sign_in
+ - User     id5156550_root
+ - Password	"" 
  
  - Sql dumb file has been uploaded on GitHub
  
