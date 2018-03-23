@@ -5,6 +5,7 @@ $db= mysqli_connect('localhost', 'root', 'root', 'sign_in');
 if($db === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
+if(isset($_POST['submit'])) {
 $userEmail = $_POST['email'];
 $timestamp = date('Y-m-d G:i:s');
 $message = "";
@@ -16,7 +17,7 @@ if(mysqli_num_rows($result) > 0) {
     $userEmail = "";
 }
 
-if(isset($_POST['submit'])) {
+
     if(!empty($userEmail)) {
         $sql = "INSERT INTO signinform (email, created_on) VALUES('$userEmail', '$timestamp')";
         if(mysqli_query($db, $sql)){
