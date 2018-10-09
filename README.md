@@ -23,7 +23,7 @@ Technologies used:
  
  - Sql dumb file has been uploaded on GitHub
  
- The following are tasks I was able to complete due to the time constrain:
+ The following are tasks I was notable to complete due to the time constrain:
  - Development of lightbox screen.
  - Footer styling completion.
  - Reseting the email input. 
