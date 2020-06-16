@@ -2,7 +2,7 @@
 This web application is a development test for Mode. 
 
 Website link: 
-https://modemattrtest.000webhostapp.com
+https://cassandreh1.github.io/Mode-Dev/
 
 Technologies used:
  - HTML5
